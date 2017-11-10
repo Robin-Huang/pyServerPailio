@@ -34,6 +34,6 @@ class PailioRecog(object):
             #     print(human_string, score)
 
             self.recogClass = self.labels[top[0]]
-            self.top_score = predict[0][top[0]]
+            self.top_score  = ("%.2f" % (predict[0][top[0]]*100))
             # second_score = predict[0][1]
 

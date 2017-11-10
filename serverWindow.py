@@ -108,7 +108,7 @@ class serverWindow(QMainWindow):
         self.recogPailio.start_recognition(self.filePath)
         self.ui.stateBrowser.append('辨識完成...')
 
-        self.prosResult = str(self.recogPailio.recogClass) + ' (相似度' + str(self.recogPailio.top_score * 100) + '%)'
+        self.prosResult = str(self.recogPailio.recogClass) + ' (相似度' +self.recogPailio.top_score + '%)'
         self.ui.stateBrowser.append('辨識結果: ' + self.prosResult)
 
         # Send result
