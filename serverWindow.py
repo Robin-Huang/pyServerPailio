@@ -110,7 +110,7 @@ class serverWindow(QMainWindow):
 
         self.prosResult = str(self.recogPailio.recogClass) + ' (相似度' +self.recogPailio.top_score + '%)'
         self.ui.stateBrowser.append('辨識結果: ' + self.prosResult)
-        self.ui.recgResult.setText('辨識結果: ' + self.prosResult)
+        self.ui.recgResult.setText(self.prosResult)
 
         # Send result
         byteArray  = QByteArray()
